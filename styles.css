@@ -73,6 +73,9 @@ body {
 
 .container {
     padding: 21px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
 }
 
 .main {
@@ -116,6 +119,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-transform: uppercase;
 }
 
 .shop-button p {
@@ -177,4 +181,127 @@ body {
     width: 804px;
     height: 708px;
     object-fit: cover;
+}
+
+.brands{
+    position: relative;
+}
+
+.brands-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 32px;
+    padding: 21px;
+    border: solid 2px #C4C4C4;
+}
+
+.brands-list img{
+    object-fit: contain;
+}
+
+.brands-title{
+    position: absolute;
+    top: -44px;
+    left: 812px;
+    background-color: white;
+    padding: 32px 12px;
+    margin: 0;
+    font-family: Oswald;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+.promo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.promo-column{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.promo-column-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.promo-img-1{
+    position: relative;
+    background-image: url("static/promos/Promo\ Image-1.png");
+    height: 434px;
+}
+
+.promo-img-2{
+    position: relative;
+    background-image: url("static/promos/Promo\ Image.png");
+    height: 434px;
+}
+
+.promo-img-3{
+    position: relative;
+    background-image: url("static/promos/Promo\ Image-2.png");
+    height: 898px;
+}
+
+.promo-content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.promo-img-1 .promo-content{
+    top: 80px;
+    left: 491px;
+}
+
+.promo-img-2 .promo-content{
+    top: 80px;
+    left: 64px;
+}
+
+.promo-img-3 .promo-content{
+    top: 452px;
+    left: 64px;
+}
+
+.promo-header{
+    font-weight: 600px;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.promo-header-primary{
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 110px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.promo-description{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400px;
+    font-size: 22px;
+    line-height: 37px;
+    letter-spacing: 1%;
+    margin: 0;
 }
