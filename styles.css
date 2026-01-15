@@ -19,7 +19,7 @@ body {
     padding: 35px 21px;
 }
 
-.navbar div p {
+.navbar-text {
     padding: 10px;
 }
 
@@ -45,6 +45,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 9px;
 }
 
 .cart {
@@ -67,4 +68,112 @@ body {
 .cart-price {
     font-weight: 700;
     font-size: 14px;
+}
+
+.container {
+    padding: 21px;
+}
+
+.main {
+    position: relative;
+    background-image: url("static/main-background.png");
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 800px;
+    padding: 46px 212px;
+}
+
+.main h1 {
+    font-weight: 600;
+    font-size: 86px;
+    line-height: 96px;
+    width: 504px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    width: 504px;
+}
+
+.no-fill {
+    color: transparent;
+    -webkit-text-stroke: 2px black;
+    text-stroke: 2px black;
+}
+
+.shop-button {
+    padding: 16px 0px;
+    border: solid 2px black;
+    width: 176px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop-button p {
+    margin: 0;
+    font-family: Oswald;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0.5px;
+    vertical-align: middle;
+}
+
+.main-decoration {
+    position: absolute;
+    top: 220px;
+}
+
+.main-navboxes {
+    position: absolute;
+    width: 100px;
+    bottom: 25px;
+    left: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-navboxes div {
+    width: 18px;
+    height: 18px;
+    border: solid 1px #828282;
+}
+
+.main-navboxes .selected {
+    width: 22px;
+    height: 22px;
+    border: none;
+    background-color: black;
+}
+
+.arrow {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    opacity: 90%;
+}
+
+.arrow-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    gap: 3px;
+}
+
+.girls {
+    width: 804px;
+    height: 708px;
+    object-fit: cover;
 }
