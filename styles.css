@@ -16,7 +16,8 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 35px 21px;
+    padding: 0 21px;
+    height: 115px;
 }
 
 .navbar-text {
