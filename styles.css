@@ -312,9 +312,139 @@ body {
 
 .promo-description{
     font-family: "Roboto", sans-serif;
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 22px;
     line-height: 37px;
     letter-spacing: 1%;
     margin: 0;
+}
+
+.checkbox,
+.radio {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+}
+
+.checkbox-label{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0%;
+}
+
+
+.shop-title{
+    font-weight: 400;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
+.checkbox-input {
+  appearance: none;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  background: #FFFFFF;
+  border: 1px solid #828282;
+}
+
+.checkbox-input:checked {
+    background: #000000;
+    border: 1px solid #000000;
+    background-image: url("data:image/svg+xml,%3csvg width='10' height='10' viewBox='-1 -1 10 8' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0.353516 1.85352L2.85352 4.35352L6.85352 0.353516' stroke='%23fff' stroke-width='1.5'/%3e%3c/svg%3e");
+    background-size: 8px 6px; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.shop-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.shop{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;      
+    gap: 24px; 
+}
+
+.shop-aside{
+    min-width: 20%;
+    border-right: 2px solid #c4c4c4;
+}
+
+.shop-product{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: calc(25% - 24px);
+}
+
+.shop-product-category{
+    font-weight: 600;
+    font-size: 12px;
+    color: #bdbdbd;
+    margin: 0;
+}
+
+.shop-product-title{
+    font-weight: 300;
+    font-size: 18px;
+    margin: 0;
+}
+
+.shop-product-price-container{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.shop-product-price{
+    font-weight: 500;
+    font-size: 22px;
+    height: 33px;
+    margin: 0;
+}
+
+.shop-product-oldprice{
+    font-weight: 400;
+    font-size: 14px;
+    color: #828282;
+    text-decoration: line-through;
+    margin: 0;
+}
+
+.shop-product-label{
+    position: absolute;
+    width: 43px;
+    height: 21px;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.shop-product-label p{
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.shop-right-side{
+    display:flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
 }
