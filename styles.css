@@ -526,11 +526,11 @@ body {
     font-size: 13px;
 }
 
-.contact-item{ 
+.contact-item {
     margin-bottom: 12px;
- }
+}
 
-.contact-key{
+.contact-key {
     margin: 0;
     font-weight: 500;
     font-size: 12px;
@@ -538,7 +538,7 @@ body {
     color: #ffffff !important;
 }
 
-.contact-value{
+.contact-value {
     margin: 6px 0 0 0;
     color: #828282;
     font-size: 12px;
@@ -609,4 +609,102 @@ body {
     font-size: 12px;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
+}
+
+.burger {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        height: 49px;
+        padding: 9px 14px;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .logo-container,
+    .logo-container img {
+        height: 31px;
+        width: auto;
+    }
+
+    .main {
+        flex-direction: column;
+        height: auto;
+        padding: 49px 0 100px 0;
+    }
+
+    .girls {
+        width: 208px;
+        height: 207px;
+        padding: 24px 56px;
+        order: -1;
+    }
+
+    .main-content {
+        width: 292px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .main-content h1 {
+        font-size: 32px;
+        line-height: 35px;
+        width: 292px;
+        text-align: center;
+    }
+
+    .main-content h1 br {
+        display: none;
+    }
+
+    .no-fill {
+        color: black;
+        -webkit-text-stroke: 2px transparent;
+        text-stroke: 2px transparent;
+    }
+
+    .shop-button {
+        padding: 0;
+        width: 128px;
+        height: 43px;
+    }
+
+    .pages,
+    .navbar-text,
+    .cart,
+    .main-decoration {
+        display: none;
+    }
+
+    .shop-container,
+    .benefits,
+    .site-footer,
+    .brands,
+    .promo {
+        display: none;
+    }
+
+    .arrow-container {
+        width: calc(100% - 30px);
+        left: 15px;
+        right: auto;
+        bottom: 20px;
+        justify-content: space-between;
+    }
+
+    .main-navboxes {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 34px;
+    }
 }
